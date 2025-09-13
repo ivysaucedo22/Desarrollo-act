@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="es" data-bs-theme="auto"> 
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Este desarrollo es de mi empresa">
+  <meta name="author" content="Ivanna Saucedo">
+  <title>GlowUp</title>
+
+  <!-- Bootstrap CSS desde CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Mi hoja de estilos personalizada -->
+  <link href="CSS/styles.css" rel="stylesheet">
+
+  <meta name="theme-color" content="#712cf9">
+</head>
+
+<body> 
+
+  <!-- Barra de navegación -->
+  <header data-bs-theme="dark">
+    <nav class="navbar navbar-expand-md fixed-top mi-navbar">
+     <!--<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">-->
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">GlowUp</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+          aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav me-auto mb-2 mb-md-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Servicios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contacto</a>
+            </li>
+          </ul>
+
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+            <button class="btn btn-Buscar" type="submit">Buscar</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Contenido principal -->
+  <main>
+
+    <!-- Carousel -->
+    <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
+      <!-- Indicadores -->
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true"
+          aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+
+      <!-- Slides -->
+
+     <!--primera imagen de slide-->
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+
+            <img src="https://i.pinimg.com/736x/74/aa/c8/74aac80ab2553db1d08af4159dba1f2c.jpg" alt="Primera imagen" width="100%">
+
+          <!--<svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true" preserveAspectRatio="xMidYMid slice">
+            <rect width="100%" height="100%" fill="var(--bs-secondary-color)" />
+          </svg>-->
+
+          <div class="container">
+            <div class="carousel-caption text-start">
+             <h1 class="text-GlowUp">GlowUp</h1>
+              <p class="opacity-75">GlowUP ✨ Tu lugar de confianza para maquillaje, skincare y perfumes. Aquí encuentras todo para brillar con tu mejor versión.</p>
+              <p><a class="btn btn-lg btn-rosa" href="#">Comenzar ahora</a></p>
+            </div>
+          </div>
+        </div>
+
+        <!--segunda imagen de slide-->
+
+        <div class="carousel-item">
+          <img src="https://plus.unsplash.com/premium_photo-1661964088064-dd92eaaa7dcf?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTY5fHxwcm9kdWN0b3MlMjBkZSUyMG1hcXVpbGxhamV8ZW58MHwwfDB8fHww" alt="Primera imagen" width="100%">
+
+          <!--<svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true" preserveAspectRatio="xMidYMid slice">
+            <rect width="100%" height="100%" fill="var(--bs-secondary-color)" />
+          </svg>-->
+
+          <div class="container">
+            <div class="carousel-caption">
+              <h1 class="text-Accesorios">Accesorios</h1>
+
+              <p>Descubre brochas, esponjas y herramientas que complementan tu rutina de maquillaje para lograr un acabado profesional.</p>
+              <p><a class="btn btn-lg btn-rosa" href="#">Descubre más</a></p>
+            </div>
+          </div>
+        </div>
+
+        <!--tercera imagen de slide-->
+
+        <div class="carousel-item">
+       <img src="https://i.pinimg.com/736x/a4/23/90/a42390f9ac97691de1133587cf8e83c2.jpg" alt="Primera imagen" width="100%">
+
+          <!--<svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true" preserveAspectRatio="xMidYMid slice">
+            <rect width="100%" height="100%" fill="var(--bs-secondary-color)" />
+          </svg>-->
+
+          <div class="container">
+            <div class="carousel-caption text-end">
+             <h1 class="text-Ofertas">Ofertas</h1>
+              <p>Aprovecha descuentos y promociones especiales en tus productos favoritos de maquillaje y skincare. ¡Belleza al mejor precio!
+</p>
+              <p><a class="btn btn-lg btn-rosa" href="#">Explorar Ofertas</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Controles -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Siguiente</span>
+      </button>
+    </div>
+
+    <!-- Marketing -->
+    <div class="container marketing my-5">
+      <div class="row text-center">
+        <div class="col-lg-4">
+          <img src="https://plus.unsplash.com/premium_photo-1684407616442-8d5a1b7c978e?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fHNraW5jYXJlfGVufDB8MHwwfHx8MA%3D%3D" class="bd-placeholder-img rounded-circle mb-3" alt="Imagen 1" width="250px">
+          <h2 class="fw-normal">Skincare</h2>
+          <p>Limpiadores, sérums, cremas y mascarillas para cada tipo de piel; desde hidratación hasta tratamientos específicos.</p>
+          <p><a class="btn btn-Skincare" href="#">Ver más &raquo;</a></p>
+        </div>
+
+        <div class="col-lg-4">
+          <img src="https://images.unsplash.com/photo-1458538977777-0549b2370168?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8ZGlvcnxlbnwwfHwwfHx8MA%3D%3D" class="bd-placeholder-img rounded-circle mb-3" alt="Imagen 2" width="250px">
+          <h2 class="fw-normal">Perfumes</h2>
+          <p>ragancias frescas, florales, intensas o dulces, además de velas y aromas para el hogar.</p>
+          <p><a class="btn btn-Perfumes" href="#">Ver más &raquo;</a></p>
+        </div>
+
+        <div class="col-lg-4">
+          <img src="https://media.istockphoto.com/id/1296705483/es/foto/elabora-productos-basados-en-podios-blancos-sobre-fondo-rosa-en-pastel.jpg?s=612x612&w=0&k=20&c=PBcaQ7AE-Wlm5_l_kKC67MCuORp9oYh7KOuqiCHKnW4=" class="bd-placeholder-img rounded-circle mb-3" alt="Imagen 3" width="250px">
+          <h2 class="fw-normal">Maquillaje</h2>
+          <p>Bases, correctores, sombras, labiales y herramientas. Todo tipo de acabados y tonos, desde lo natural hasta lo glam.</p>
+          <p><a class="btn btn-Maquillaje" href="#">Ver más &raquo;</a></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Featurettes -->
+    <div class="container my-5">
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading fw-normal lh-1">Marcas <span class="text-body-secondary"></span></h2>
+          <p class="lead">Explora nuestras marcas favoritas, seleccionadas por su calidad e innovación en maquillaje y cuidado de la piel..</p>
+        </div>
+        <div class="col-md-5">
+          <img src="https://images.unsplash.com/photo-1577036251102-9cf1285e487a?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8ZGlvciUyMG1hcXVpbGxhamV8ZW58MHwwfDB8fHww" class="img-fluid mx-auto" alt="Feature 1">
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7 order-md-2">
+          <h2 class="featurette-heading fw-normal lh-1">Tutoriales <span class="text-body-secondary"></span></h2>
+          <p class="lead">Sigue nuestros tutoriales paso a paso y aprende trucos para lograr looks increíbles fácilmente..</p>
+        </div>
+        <div class="col-md-5 order-md-1">
+          <img src="https://plus.unsplash.com/premium_photo-1683120945190-42ebfb2b6e7e?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8dHV0b3JpYWxlc3xlbnwwfDB8MHx8fDA%3D" class="img-fluid mx-auto" alt="Feature 2">
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading fw-normal lh-1">Tendencias <span class="text-body-secondary"></span></h2>
+          <p class="lead">Descubre lo último en maquillaje: colores, estilos y looks que marcan la temporada..</p>
+        </div>
+        <div class="col-md-5">
+          <img src="https://images.unsplash.com/photo-1519748771451-a94c596fad67?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dGVuZGVuY2lhcyUyMGRlJTIwbW9kYXxlbnwwfDB8MHx8fDA%3D" class="img-fluid mx-auto" alt="Feature 3">
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+    </div>
+
+    <!-- Footer -->
+    <footer class="container text-center py-4">
+      <p class="float-end"><a href="#">Volver arriba</a></p>
+      <p>&copy; 2025 GlowUp &middot; <a href="#">Privacidad</a> &middot; <a href="#">Términos</a></p>
+    </footer>
+  </main>
+
+  <!-- Bootstrap JS desde CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
